@@ -1,21 +1,89 @@
+/* Updated Global Styles for Portfolio with Logo Color Theme */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 2 0% 95%;
+    --foreground: 2 0% 10%;
+    --card: 2 0% 90%;
+    --card-foreground: 2 0% 15%;
+    --popover: 2 0% 95%;
+    --popover-foreground: 2 95% 10%;
+    --primary: 2 79.5% 36.3%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 2 10% 70%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: -36 10% 85%;
+    --muted-foreground: 2 0% 40%;
+    --accent: -36 10% 80%;
+    --accent-foreground: 2 0% 15%;
+    --destructive: 0 50% 49%;
+    --destructive-foreground: 2 0% 90%;
+    --border: 2 20% 50%;
+    --input: 2 20% 49%;
+    --ring: 2 79.5% 36.3%;
+    --radius: 0.5rem;
+
+    /* Updated to match logo colors */
+    --logo-primary: 2 79.5% 36.3%;
+    /* Matches the red circle */
+    --logo-accent: 15 75% 50%;
+    /* Matches the orange flame */
+
+    --aihyrcolor: hsl(214, 59%, 33%);
+    --boomcolor: hsl(344, 99%, 51%);
+  }
+
+  .dark {
+    --background: 2 10% 10%;
+    --foreground: 2 0% 90%;
+    --card: 2 0% 10%;
+    --card-foreground: 2 0% 90%;
+    --popover: 2 10% 5%;
+    --popover-foreground: 2 0% 90%;
+    --primary: 2 79.5% 36.3%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 2 10% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: -36 10% 25%;
+    --muted-foreground: 2 0% 60%;
+    --accent: -36 10% 25%;
+    --accent-foreground: 2 0% 90%;
+    --destructive: 0 50% 49%;
+    --destructive-foreground: 2 0% 90%;
+    --border: 2 20% 49%;
+    --input: 2 20% 49%;
+    --ring: 2 79.5% 36.3%;
+    --radius: 0.5rem;
+
+    /* Updated to match logo colors */
+    --logo-primary: 2 79.5% 36.3%;
+    --logo-accent: 15 75% 50%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Logo-specific updates */
+  .logo-primary {
+    color: hsl(var(--logo-primary));
+  }
+
+  .logo-accent {
+    color: hsl(var(--logo-accent));
+  }
 }
