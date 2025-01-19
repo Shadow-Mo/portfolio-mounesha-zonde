@@ -1,12 +1,12 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   motion,
   useMotionValue,
   useSpring,
   useTransform,
+  MotionValue,
 } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -28,7 +28,7 @@ export function FloatingDock({
    * We only need ONE dock now, so we’ve combined
    * your original “desktop” logic for all screen sizes.
    */
-  let mouseX = useMotionValue(Infinity);
+  const mouseX = useMotionValue(Infinity);
 
   return (
     <motion.div
@@ -38,7 +38,7 @@ export function FloatingDock({
       // Show for all screens, remove `md:flex` and `md:hidden`
       className={cn(
         "mx-auto flex h-16 gap-4 items-end rounded-2xl",
-        "bg-gray-50 dark:bg-neutral-900 px-4 pb-3", 
+        "bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
         className
       )}
     >
@@ -54,7 +54,7 @@ function IconContainer({
   title,
   icon,
   href,
-}: DockItem & { mouseX: any }) {
+}: DockItem & { mouseX: MotionValue<number> }) {
   const ref = useRef<HTMLDivElement>(null);
 
   // Distance from mouse pointer to icon center
