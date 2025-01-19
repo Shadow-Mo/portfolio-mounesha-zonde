@@ -56,6 +56,8 @@ export default function Navbar() {
           <Image
             src="/logo.png" // Replace with your logo path
             alt="Logo"
+            width={100}
+            height={100}
             className="h-8 w-8 md:h-10 md:w-10"
           />
           <span className="text-sm font-semibold text-gray-800 md:text-lg">

@@ -9,7 +9,7 @@ export default function Hero() {
       className={[
         "bg-primary-foreground",
         "bg-[url('/hero-bg.webp')]",
-        "bg-right-bottom bg-no-repeat bg-cover",
+        "bg-right-bottom bg-contain bg-no-repeat",
         "bg-[length:80%] sm:bg-[length:80%] md:bg-[length:70%] lg:bg-[length:70%] xl:bg-[length:70%] 2xl:bg-[length:70%]",
       ].join(" ")}
     >
