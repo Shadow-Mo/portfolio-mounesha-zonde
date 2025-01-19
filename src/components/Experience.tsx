@@ -16,11 +16,12 @@ export default function Experience() {
             Sept 2024 - Present
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Led the development of scalable web applications and microservices,
-            focusing on performance optimization and cloud integrations.
+            Developed and maintained end-to-end web applications using modern frameworks (React/Next) and Node.js/Python, hosted on Microsoft Azure.
+            Integrated Azure’s OpenAI services to implement advanced natural language processing features, utilizing prompt engineering for contextual interactions.
+            Implemented containerization, CI/CD pipelines, and best coding practices to ensure scalable, efficient deployments on Azure.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
-            {["React", "Node.js", "Openai", "Nextjs", "Azure"].map((tech, idx) => (
+            {["React", "Node.js", "Openai", "Next.js", "Azure", "MongoDB"].map((tech, idx) => (
               <span
                 key={idx}
                 className="px-3 py-1 text-sm bg-muted text-muted-foreground rounded-md shadow-sm"
