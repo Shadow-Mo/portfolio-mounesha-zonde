@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button"; // Update path as needed
 import { IconExternalLink } from "@tabler/icons-react"; // External link icon
+import Image from "next/image";
 
 export default function Navbar() {
   const [active, setActive] = useState<string>("home");
@@ -52,7 +53,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-4 py-3 md:px-8 md:py-3">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img
+          <Image
             src="/logo.png" // Replace with your logo path
             alt="Logo"
             className="h-8 w-8 md:h-10 md:w-10"
