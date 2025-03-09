@@ -115,7 +115,7 @@ export default function Navbar() {
 
           {/* Resume Button with External Link Icon */}
           <a
-            href="https://drive.google.com/file/d/1jGMJw2mDau4i1OJNs581clZQetcm3mM-/view?usp=sharing"
+            href="https://drive.google.com/file/d/11uwhaqDcXCdMFTCYrYFUEZ7mygcMDQBr/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -10,7 +10,7 @@ export default function Projects() {
       description:
         "Platform offering music courses designed to transform your musical journey, catering to all skill level musicians.",
       link: "https://musicnextjs-nu.vercel.app/",
-      category: ["Websites", "Nextjs"],
+      category: ["Learning", "Nextjs"],
       image: "/musicnextjs.png",
     },
     {
@@ -18,7 +18,7 @@ export default function Projects() {
       description:
         "Deadpool World is an action-packed universe of the iconic character, showcasing his unique personality and adventures.",
       link: "https://deadpool-taupe.vercel.app/",
-      category: ["Websites", "React.JS"],
+      category: ["Learning", "React.JS"],
       image: "/deadpool.png",
     },
     {
@@ -26,7 +26,7 @@ export default function Projects() {
       description:
         "Learning project focused on implementing smooth scroll transitions to enhance user experience and visual storytelling on web pages.",
       link: "https://parallax-transition.vercel.app/",
-      category: ["Others", "Nextjs"],
+      category: ["Learning"],
       image: "/parallax-transition.png",
     },
     {
@@ -34,7 +34,7 @@ export default function Projects() {
       description:
         "Learning project focused on developing a to-do list application using React and CSS.",
       link: "https://to-do-list-five-henna.vercel.app/",
-      category: ["Others", "React.JS"],
+      category: ["Learning"],
       image: "/to-do-list.png",
     },
     {
@@ -42,7 +42,7 @@ export default function Projects() {
       description:
         "Learning project that showcases interactive 3D models within a React application, enhancing user engagement and visual appeal.",
       link: "https://3-d-portfolio-tawny-two.vercel.app/",
-      category: ["Others", "React.JS"],
+      category: ["Learning"],
       image: "/3dportfolio.png",
     },
     {
@@ -61,6 +61,30 @@ export default function Projects() {
       category: ["Others"],
       image: "/securepasswordstorage.png",
     },
+    {
+      title: "BoomPanda Admin Dashboard",
+      description:
+        "Developed Boompanda Admin Interface using MERN stack and Nextjs. Engineered RESTful APIs for CRUD operations, ensuring seamless data management within the application.",
+      link: "",
+      category: ["BoomPanda"],
+      image: "/boompanda-admin-dashboard.jpg",
+    },
+    {
+      title: "Focus Realm",
+      description:
+        "Comprehensive educational management system for students, teachers, and administrators, featuring study sessions, assignment management, performance tracking, leave management, and real-time communication.",
+      link: "",
+      category: ["BoomPanda"],
+      image: "/focus-realm.jpg",
+    },
+    {
+      title: "Create React Tailwind App",
+      description:
+        "A custom NPM package that streamlines the process of creating new React applications with Tailwind CSS integration, making project setup faster and more efficient.",
+      link: "https://www.npmjs.com/package/@mouneshazonde/create-react-tailwind-app",
+      category: ["Others"],
+      image: "/npm-package.jpg",
+    },
   ];
 
   const [activeCategory, setActiveCategory] = useState("All");
@@ -72,7 +96,7 @@ export default function Projects() {
           project.category.includes(activeCategory)
         );
 
-  const categories = ["All", "React.JS", "Websites", "Others"];
+  const categories = ["All", "React.JS", "Learning", "BoomPanda", "Others"];
 
   return (
     <div id="projects" className="bg-primary-foreground min-h-screen">
@@ -103,7 +127,7 @@ export default function Projects() {
           {filteredProjects.map((project, idx) => (
             <div
               key={idx}
-              className="relative group rounded-[22px] overflow-hidden"
+              className="relative group rounded-[22px] overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out"
             >
               {/* Image */}
               <div className="overflow-hidden">
@@ -124,16 +148,18 @@ export default function Projects() {
                 <p className="text-xs sm:text-sm text-white mb-4">
                   {project.description}
                 </p>
-                <Button variant={"default"}>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 text-sm font-bold text-white bg-logo-primary rounded-md"
-                  >
-                    Live Demo
-                  </a>
-                </Button>
+                {project.link && (
+                  <Button variant={"default"}>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 text-sm font-bold text-white bg-logo-primary rounded-md"
+                    >
+                      Live Demo
+                    </a>
+                  </Button>
+                )}
               </div>
             </div>
           ))}
