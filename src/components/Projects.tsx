@@ -6,6 +6,14 @@ import { Button } from "./ui/button";
 export default function Projects() {
   const allProjects = [
     {
+      title: "Mask Cursor",
+      description:
+        "A masking effect that follows your cursor to reveal hidden content beneath, creating an engaging interactive experience built with Next.js and Framer Motion.",
+      link: "https://mask-cursor-alpha.vercel.app/",
+      category: ["Learning", "Nextjs"],
+      image: "/maskcursor.png",
+    },
+    {
       title: "Music Course",
       description:
         "Platform offering music courses designed to transform your musical journey, catering to all skill level musicians.",
