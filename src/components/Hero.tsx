@@ -35,14 +35,15 @@ export default function Hero() {
 
           {/* Sub-Heading with drop shadow */}
           <h2 className="text-3xl sm:text-5xl font-semibold text-foreground tracking-tight drop-shadow-md">
-            I build things for the web.
+            I build AI-powered things for the web.
           </h2>
 
           {/* Description Paragraph */}
           <p className="max-w-md text-gray-500 leading-relaxed text-sm sm:text-base">
-            I&apos;m a fullstack developer specializing in building (and occasionally
-            designing) exceptional fullstack applications. Currently, I’m
-            focused on building accessible, human-centered products.
+            I&apos;m a full-stack developer building scalable web applications
+            and AI-powered systems with React, Next.js, Node.js, Python and
+            cloud platforms like Azure and GCP — including agentic AI
+            workflows, RAG, and LLM integrations.
           </p>
 
           {/* Resume Button */}

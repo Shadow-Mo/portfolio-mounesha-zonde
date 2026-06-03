@@ -16,12 +16,14 @@ export default function Experience() {
             Sept 2024 - Present
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Developed and maintained end-to-end web applications using modern frameworks (React/Next) and Node.js/Python, hosted on Microsoft Azure.
-            Integrated Azure’s OpenAI services to implement advanced natural language processing features, utilizing prompt engineering for contextual interactions.
-            Implemented containerization, CI/CD pipelines, and best coding practices to ensure scalable, efficient deployments on Azure.
+            Building AI-powered full-stack applications with React, Next.js, TypeScript, Node.js, Python, and MongoDB.
+            Integrated Python-based AI workflows with Azure OpenAI and Azure AI Foundry for real-time conversational and assessment systems,
+            and built real-time communication features using Azure Communication Services (ACS) on top of Azure App Services, Function Apps, and Blob Storage.
+            Implemented agentic AI workflows on GCP Vertex AI using ADK agents with tool-calling and sub-agent orchestration,
+            and automated deployments via GitLab CI/CD for scalable, production-ready releases.
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
-            {["React", "Node.js", "Openai", "Next.js", "Azure", "MongoDB"].map((tech, idx) => (
+            {["React", "Next.js", "Node.js", "Python", "Azure", "ACS", "GCP", "Agentic AI", "MongoDB"].map((tech, idx) => (
               <span
                 key={idx}
                 className="px-3 py-1 text-sm bg-muted text-muted-foreground rounded-md shadow-sm"

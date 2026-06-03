@@ -8,17 +8,21 @@ const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
 const slugs = [
   "typescript",
   "javascript",
+  "python",
   "materialui",
   "tailwindcss",
   "mysql",
   "mongodb",
   "java",
   "react",
+  "nextdotjs",
   "html5",
   "css3",
   "express",
   "vercel",
   "openai",
+  "microsoftazure",
+  "googlecloud",
   "git",
   "github",
   "gitlab",
@@ -35,26 +39,29 @@ export default function Skills() {
         <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
           <h1 className="text-3xl sm:text-5xl font-bold mb-4">About Me</h1>
           <p className="text-base leading-relaxed mb-4">
-            Hello! I am a passionate full-stack developer with a keen interest
-            in crafting scalable and efficient web applications. My journey in
-            web development began with exploring HTML & CSS and has now evolved
-            into mastering frameworks like React, Node.js, and Next.js.
+            Hello! I am a full-stack developer with a keen interest in
+            crafting scalable web applications and AI-powered systems. My
+            journey began with HTML & CSS and has evolved into building
+            production-grade products with React, Next.js, Node.js, and
+            Python.
           </p>
           <p className="text-base leading-relaxed mb-4">
-            Over the years, I have worked on various exciting projects ranging
-            from building modern web applications to integrating cloud-based
-            solutions using Azure, MongoDB, and MySQL. My primary focus is on
-            creating user-friendly and accessible digital experiences for a
-            variety of clients.
+            These days I spend most of my time building cloud-integrated,
+            AI-first applications — designing agentic workflows, integrating
+            LLMs, and shipping real-time experiences on Microsoft Azure and
+            Google Cloud. I care about clean architecture, accessibility, and
+            shipping reliable software end-to-end.
           </p>
           <p className="text-base leading-relaxed mb-4 font-semibold">
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul className="grid grid-cols-2 gap-2 text-base mt-4">
-            <li>Typescript</li>
-            <li>Tailwindcss</li>
-            <li>Nextjs</li>
-            <li>Azure(Openai services)</li>
+            <li>TypeScript / Next.js</li>
+            <li>Python / Node.js</li>
+            <li>Azure AI Foundry & ACS</li>
+            <li>GCP Vertex AI / ADK Agents</li>
+            <li>Agentic AI & RAG</li>
+            <li>MongoDB / MySQL</li>
           </ul>
         </div>
 
