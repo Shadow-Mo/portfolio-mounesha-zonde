@@ -50,13 +50,32 @@ export default {
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
 				},
-				boomcolor: 'hsl(344, 99%, 51%)',
-				aihyrcolor: 'hsl(214, 59%, 33%)',
+				boomcolor: 'hsl(var(--boomcolor))',
+				aihyrcolor: 'hsl(var(--aihyrcolor))',
+				'logo-primary': 'hsl(var(--logo-primary))',
+				'logo-accent': 'hsl(var(--logo-accent))',
+			},
+			fontFamily: {
+				sans: ['var(--font-geist-sans)', 'Arial', 'sans-serif'],
+				mono: ['var(--font-geist-mono)', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			keyframes: {
+				marquee: {
+					to: { transform: 'translateX(-50%)' }
+				},
+				blink: {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
+				}
+			},
+			animation: {
+				marquee: 'marquee 40s linear infinite',
+				blink: 'blink 1.1s step-end infinite'
 			}
 		},
 		screens: {
