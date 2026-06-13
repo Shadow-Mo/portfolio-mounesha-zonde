@@ -8,7 +8,7 @@ import LogoMark from "@/components/ui/logo-mark";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/11uwhaqDcXCdMFTCYrYFUEZ7mygcMDQBr/view?usp=sharing";
+  "https://drive.google.com/file/d/15cSm-qpmSotIeJKg1wQw0SzFTJ-eDhSZ/view?usp=sharing";
 
 const NAV_ITEMS = [
   { id: "home", label: "Home" },
