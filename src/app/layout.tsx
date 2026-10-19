@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Mounesha Zonde",
+  title: "Portfolio | Mounesh Zonde",
   description: "Full-stack developer building AI-powered web applications.",
 };
 

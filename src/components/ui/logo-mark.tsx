@@ -33,7 +33,7 @@ export default function LogoMark({
     <svg
       viewBox={LOGO_VIEWBOX}
       role="img"
-      aria-label="Mounesha Zonde logo"
+      aria-label="Mounesh Zonde logo"
       className={cn("select-none", className)}
     >
       <defs>

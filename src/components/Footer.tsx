@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         <p className="text-xs font-mono text-muted-foreground text-center">
-          Designed &amp; built by Mounesha Zonde &middot; &copy;{" "}
+          Designed &amp; built by Mounesh Zonde &middot; &copy;{" "}
           {new Date().getFullYear()}
         </p>
       </div>

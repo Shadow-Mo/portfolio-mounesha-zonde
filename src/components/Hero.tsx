@@ -36,7 +36,7 @@ export default function Hero() {
 
           <Reveal delay={0.15}>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-foreground">
-              Mounesha Zonde<span className="text-logo-primary">.</span>
+              Mounesh Zonde<span className="text-logo-primary">.</span>
             </h1>
           </Reveal>
 
