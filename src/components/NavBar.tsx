@@ -76,7 +76,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-3">
           <LogoMark className="h-8 w-8 md:h-10 md:w-10" />
           <span className="text-sm font-semibold text-foreground md:text-lg">
-            Mounesha Zonde
+            Mounesh Zonde
           </span>
         </div>
 
